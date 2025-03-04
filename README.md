@@ -69,11 +69,10 @@ Repositório contendo implementações avançadas de redes neurais usando Keras 
 ```bash
 git clone https://github.com/seu-usuario/redes-neurais-keras.git
 cd redes-neurais-keras
-
+```
 ## 🛠️ Como Configurar o Ambiente
 
 ### Criar Ambiente Virtual (Venv)
-```bash
 # Criar ambiente virtual
 python -m venv venv
 
@@ -120,7 +119,6 @@ source venv/bin/activate
 ---
 
 ### Instalação Rápida (via requirements.txt)
-```bash
 pip install -r requirements.txt
 ```
 
