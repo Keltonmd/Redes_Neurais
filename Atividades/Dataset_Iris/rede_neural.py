@@ -68,12 +68,13 @@ X = dataset[['sepal_length','sepal_width','petal_length','petal_width']].values
 Y = dataset[['Iris_Setosa','Iris_Versicolor','Iris_Virginica']].values
 Y = np.where(Y == True, 1, 0)
 
-# Normalizando os dados
-scaler = StandardScaler()
-X = scaler.fit_transform(X)
-
 # Dividindo os dados de teste e treino
 X_treino, X_teste, y_treino, y_teste = train_test_split(X, Y, test_size=0.3, random_state=0)
+
+# Normalizando os dados
+scala = StandardScaler()
+X_treino = scala.fit_transform(X_treino)
+X_teste = scala.transform(X_teste)
 
 ''' LeakyReLu
 alpha = 0.01 → Valor padrão mais comum.
