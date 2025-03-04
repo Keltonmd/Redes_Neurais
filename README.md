@@ -8,18 +8,13 @@ Repositório contendo implementações avançadas de redes neurais usando Keras 
 
 ## 📚 Conteúdo
 - [Projetos](#-projetos)
-- [Técnicas Destacadas](#-técnicas-destacadas)
-- [Instalação](#-instalação)
-- [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Como Executar](#-como-executar)
-- [Resultados](#-resultados)
-- [Contribuição](#-contribuição)
-- [Licença](#-licença)
-- [Referências](#-referências)
+- [Técnicas Destacadas](#️-técnicas-destacadas)
+- [Configuração do Ambiente](#️-configuração-do-ambiente)
+- [Instalar Dependências](#-instalar-dependências)
 
 ---
 
-## 🚀 Projetos
+# 🚀 Projetos
 
 ### 1. Classificação de Dígitos MNIST
 **Objetivo**: Reconhecimento de dígitos manuscritos (0-9) com 99%+ de acurácia  
@@ -47,7 +42,7 @@ Repositório contendo implementações avançadas de redes neurais usando Keras 
 
 ---
 
-## 🛠️ Técnicas Destacadas
+# 🛠️ Técnicas Destacadas
 | Técnica               | Aplicação                          | Benefício                             |
 |-----------------------|------------------------------------|---------------------------------------|
 | **LeakyReLU**         | Ativação em camadas ocultas        | Evita neurônios "mortos"              |
@@ -58,7 +53,7 @@ Repositório contendo implementações avançadas de redes neurais usando Keras 
 
 ---
 
-## ⚙️ Configuração do Ambiente
+# ⚙️ Configuração do Ambiente
 
 ### Pré-requisitos
 - Python 3.9+ instalado
@@ -84,12 +79,12 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-3. **Instalar Dependências**
+# 📦 Instalar Dependências**
 ```bash
 pip install -r Atividades/requirements.txt
 ```
 
-### 📦 Lista Completa de Bibliotecas
+### Lista Completa de Bibliotecas
 
 | Biblioteca       | Versão   | Função Principal                          |
 |-------------------|----------|-------------------------------------------|
