@@ -58,79 +58,77 @@ Repositório contendo implementações avançadas de redes neurais usando Keras 
 
 ---
 
-## ⚙️ Instalação
+## ⚙️ Configuração do Ambiente
 
 ### Pré-requisitos
-- Python 3.9+
-- pip
+- Python 3.9+ instalado
+- Git para clonar o repositório (opcional)
 
 ### Passo a Passo
-1. Clonar repositório:
+
+1. **Clonar o Repositório**
 ```bash
 git clone https://github.com/seu-usuario/redes-neurais-keras.git
 cd redes-neurais-keras
 ```
-## 🛠️ Como Configurar o Ambiente
 
-### Criar Ambiente Virtual (Venv)
-# Criar ambiente virtual
-python -m venv venv
+2. **Criar e Ativar Ambiente Virtual**
+```bash
+# Criar ambiente
+python -m venv .venv
 
 # Ativar ambiente
 # Windows:
-venv\Scripts\activate
+.venv\Scripts\activate
 # Linux/Mac:
-source venv/bin/activate
-
-### Instalar Bibliotecas
-
-#### **TensorFlow**  
-**Instalação**: `pip install tensorflow==2.12.0`  
-**Utilização**: Backend para execução das redes neurais e integração com o Keras.
-
-#### **Keras**  
-**Instalação**: `pip install keras==2.12.0`  
-**Utilização**: Construção e treinamento das arquiteturas de redes neurais.
-
-#### **NumPy**  
-**Instalação**: `pip install numpy==1.24.3`  
-**Utilização**: Manipulação numérica eficiente de arrays para pré-processamento.
-
-#### **Matplotlib**  
-**Instalação**: `pip install matplotlib==3.7.1`  
-**Utilização**: Geração de gráficos (evolução do treinamento, visualização de dados).
-
-#### **scikit-learn**  
-**Instalação**: `pip install scikit-learn==1.2.2`  
-**Utilização**: Divisão de dados (`train_test_split`), normalização (`StandardScaler`) e métricas (`confusion_matrix`).
-
-#### **Pandas**  
-**Instalação**: `pip install pandas==2.0.2`  
-**Utilização**: Manipulação de datasets em formato tabular (ex: dataset Iris).
-
-#### **Seaborn**  
-**Instalação**: `pip install seaborn==0.12.2`  
-**Utilização**: Visualização de matrizes de confusão estilizadas.
-
-#### **ucimlrepo**  
-**Instalação**: `pip install ucimlrepo==0.0.3`  
-**Utilização**: Download direto de datasets da UCI (ex: Breast Cancer Wisconsin).
-
----
-
-### Instalação Rápida (via requirements.txt)
-pip install -r requirements.txt
+source .venv/bin/activate
 ```
 
-> **requirements.txt**:
+3. **Instalar Dependências**
+```bash
+pip install -r Atividades/requirements.txt
+```
+
+### 📦 Lista Completa de Bibliotecas
+
+| Biblioteca       | Versão   | Função Principal                          |
+|-------------------|----------|-------------------------------------------|
+| TensorFlow        | 2.18.0   | Backend para computação numérica          |
+| Keras             | 3.8.0    | Construção de modelos de redes neurais    |
+| NumPy             | 2.2.3    | Manipulação de arrays multidimensionais   |
+| Matplotlib        | 3.10.1   | Geração de gráficos e visualizações       |
+| scikit-learn      | 1.6.1    | Ferramentas de ML e pré-processamento     |
+| Pandas            | 2.2.3    | Manipulação de dados tabulares            |
+| Seaborn           | 0.13.2   | Visualizações estatísticas avançadas      |
+| ucimlrepo         | 0.0.7    | Acesso a datasets da UCI ML Repository    |
+| PyQt6             | 6.8.1    | Interface gráfica para visualizações      |
+| pip               | 25.0.1   | Gerenciador de pacotes Python             |
+
+> 📁 **Atividades/requirements.txt**  
 > ```txt
-> tensorflow==2.12.0
-> keras==2.12.0
-> numpy==1.24.3
-> matplotlib==3.7.1
-> scikit-learn==1.2.2
-> pandas==2.0.2
-> seaborn==0.12.2
-> ucimlrepo==0.0.3
+> pip==25.0.1
+> PyQt6==6.8.1
+> scikit-learn==1.6.1
+> seaborn==0.13.2
+> tensorflow==2.18.0
+> ucimlrepo==0.0.7
+> keras==3.8.0
+> matplotlib==3.10.1
+> numpy==2.2.3
+> pandas==2.2.3
 > ```
+
+### ✅ Verificação da Instalação
+```bash
+python -c "import tensorflow as tf; print(f'TensorFlow: {tf.__version__}')"
+python -c "import keras; print(f'Keras: {keras.__version__}')"
+python -c "import sklearn; print(f'scikit-learn: {sklearn.__version__}')"
+```
+
+### ⚠️ Notas Importantes
+1. A versão do pip será atualizada automaticamente durante a instalação
+2. O PyQt6 é necessário para algumas funcionalidades gráficas do Matplotlib
+3. A estrutura do Keras 3.x é compatível com TensorFlow 2.18.0
+4. Use sempre o ambiente virtual ativado para executar os projetos
+
 ```

@@ -1,0 +1,10 @@
+pip==25.0.1
+PyQt6==6.8.1
+scikit-learn==1.6.1
+seaborn==0.13.2
+tensorflow==2.18.0
+ucimlrepo==0.0.7
+keras==3.8.0
+matplotlib==3.10.1
+numpy==2.2.3
+pandas==2.2.3
