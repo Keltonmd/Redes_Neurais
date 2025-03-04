@@ -87,3 +87,23 @@ plt.xlabel('Predição')
 plt.ylabel('Real')
 plt.savefig('Dataset_breast_cancer/matriz_de_confusão.pdf')
 plt.close()
+
+# Grafico do Erro
+plt.plot(H.history['loss'], label='Loss')
+plt.plot(H.history['val_loss'], label='Val Loss')
+plt.title('Gráfico de Loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.savefig('Dataset_breast_cancer/evolucao_erro.pdf')
+plt.close()
+
+# Grafico da Acuracia
+plt.plot(H.history['accuracy'], label='Acurácia')
+plt.plot(H.history['val_accuracy'], label='Val  Acurácia')
+plt.title('Gráfico de Acurácia')
+plt.xlabel('Epochs')
+plt.ylabel('Acurácia')
+plt.legend()
+plt.savefig('Dataset_breast_cancer/evolucao_acuracia.pdf')
+plt.close()
