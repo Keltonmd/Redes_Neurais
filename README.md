@@ -79,7 +79,7 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-# 📦 Instalar Dependências**
+# 📦 Instalar Dependências
 ```bash
 pip install -r Atividades/requirements.txt
 ```
