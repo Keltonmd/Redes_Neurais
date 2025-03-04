@@ -130,5 +130,3 @@ python -c "import sklearn; print(f'scikit-learn: {sklearn.__version__}')"
 2. O PyQt6 é necessário para algumas funcionalidades gráficas do Matplotlib
 3. A estrutura do Keras 3.x é compatível com TensorFlow 2.18.0
 4. Use sempre o ambiente virtual ativado para executar os projetos
-
-```
