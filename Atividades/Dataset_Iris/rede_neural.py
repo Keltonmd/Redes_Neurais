@@ -60,8 +60,7 @@ for (x_feature, y_feature, title), subplot in zip(plot_configs, ax.flatten()):
 
 # Ajustando layout e salvando o gráfico
 plt.tight_layout()
-plt.savefig("grafico_iris.pdf")
-plt.show()  # Exibir o gráfico
+plt.savefig("Dataset_Iris/grafico_iris.pdf")
 plt.close()  # Fechar para evitar sobreposição
 
 # Definindo X e Y
@@ -122,7 +121,7 @@ cm = confusion_matrix(y_teste_convertido, y_pred)
 # Exibindo a matriz de confusão
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["Setosa", "Versicolor", "Virginica"])
 disp.plot(cmap=plt.cm.Blues)
-plt.savefig('matriz_de_confusão.pdf')
+plt.savefig('Dataset_Iris/matriz_de_confusão.pdf')
 plt.close()
 
 # Grafico do Erro
@@ -132,7 +131,7 @@ plt.title('Gráfico de Loss')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
-plt.savefig('evolucao_erro.pdf')
+plt.savefig('Dataset_Iris/evolucao_erro.pdf')
 plt.close()
 
 # Grafico da Acuracia
@@ -142,5 +141,5 @@ plt.title('Gráfico de Acurácia')
 plt.xlabel('Epochs')
 plt.ylabel('Acurácia')
 plt.legend()
-plt.savefig('evolucao_acuracia.pdf')
+plt.savefig('Dataset_Iris/evolucao_acuracia.pdf')
 plt.close()
